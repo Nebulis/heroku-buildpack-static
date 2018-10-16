@@ -23,6 +23,7 @@ class NginxConfig
     json["port"] ||= ENV["PORT"] || 5000
     json["root"] ||= DEFAULT[:root]
     json["encoding"] ||= DEFAULT[:encoding]
+    json["root_directory"] ||= ENV["ROOT_DIRECTORY"]
 
     index = 0
     json["proxies"] ||= {}

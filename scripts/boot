@@ -3,6 +3,7 @@
 set -o pipefail
 
 HERE=$(dirname "$0")
+export ROOT_DIRECTORY=`realpath ${HERE}`
 
 # Reify the environment into an nginx config file, since nginx doesn't support
 # environment variables particularly well
